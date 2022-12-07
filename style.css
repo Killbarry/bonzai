@@ -1,0 +1,311 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Nanum Myeongjo';
+
+}
+
+
+/* MENU */
+
+.menu {
+    background-image: url(/assets/photos/09-day.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.menu__linklist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    margin-top: 0px;
+    padding-top: 0.8rem;
+}
+
+
+  a:-webkit-any-link {
+    color: #000;
+    text-decoration: none;
+ }
+
+li:nth-child(1) {
+   max-width: 20%;
+}
+
+
+.menu__header-logo {
+    max-width: 70%;
+   
+}
+
+
+/* header flavour text logo */
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 25%; */
+    align-items: center;
+    padding-right: 40%;
+    padding-top: 2%;
+}
+
+
+
+.header__content__text {
+    display: block;
+}
+
+
+.header__content__logo{
+    max-width: 15%;
+}
+
+/* main section checkin box */
+
+.main-section {
+    background-color: #05272f;
+    background-image: url(/assets/backgroundoverlay.png);
+    background-size: 90%;
+    color: #fff;
+    /* position: absolute; */
+
+}
+
+
+
+.main-section__checkin {
+    background-color: black;
+    opacity: 0.7;
+    margin: -2rem 2rem 0rem 2rem;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    'checkintext checkintext adulttext childtext button'
+    'checkindate checkindate adultcount childcount button';
+}
+
+
+
+.main-section__checkin-text {
+    grid-area: checkintext;
+    opacity: 1;
+}
+
+.main-section__checkin-dates {
+    grid-area: checkindate;
+}
+
+
+
+.main-section__checkin-adult {
+    grid-area: adulttext;
+
+}
+
+.main-section__checkin-adult-input {
+    grid-area: adultcount;
+}
+
+
+
+.main-section__checkin-children {
+    grid-area: childtext;
+}
+
+
+.main-section__checkin-childreninput {
+    grid-area: childcount;
+
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
+}
+
+
+.main-section__checkin-button {
+    grid-area: button;
+    text-align: center;
+    background-color: #dbf6b0;
+    color: buttontext;
+    border-width: 0px;
+    border-style: outset;
+    border-radius: 10px;
+    margin: 1rem;
+    font-family: 'raleway';
+    font-size: large;
+    font-weight: 700;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+.main__filler {
+   text-align: center;
+   margin: 7%;
+   padding-bottom: 7%;
+}
+
+
+/* kort */
+
+
+.main__card {
+    display: flex;
+    flex-direction: row;
+     gap: 2rem;
+    place-items: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.main__card__first, .main__card__second, .main__card__third {
+    background: white;
+    max-width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+
+}
+
+.main__card__first{
+    background-image: url(/assets/photos/07-night.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.main__card__second{
+    background-image: url(/assets/photos/06-night.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.main__card__third{
+    background-image: url(/assets/photos/04-night.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.card__text {
+    width: 80%;
+    margin-bottom: 1rem;
+    font-size: x-small;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    margin-top: 45%;
+}
+
+.info {
+    margin-block-end: 0;
+}
+
+
+
+
+.footer {
+    background-color: #20666f;
+    color: #54eabd;
+    padding-bottom: 2rem;
+  
+}
+
+
+.footer__nav{
+ display: grid;
+ grid-column: auto;
+ grid-row: auto;
+ grid-template-areas: 'image info ToC resorts';
+ column-gap: 2rem;
+}
+
+
+.footer__nav__img{
+    max-width: 100%;
+    grid-area: image;
+    margin: 1rem;
+}
+
+.footer__nav-info {
+    grid-area: info;
+    margin: 1rem;
+}
+
+
+.footer__nav-ToC {
+    grid-area: ToC;
+    margin: 1rem;
+}
+
+.footer__nav-resorts {
+    grid-area: resorts;
+    margin: 1rem;
+}
+.footer__nav__list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+
+.menu__booking {
+    background-color: #05272f;
+    background-image: url(/assets/backgroundoverlay.png);
+    background-size: 90%;
+    padding: 0.5rem 0 0.5rem 0;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.booking__infosection{
+    background-color: #20666f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.booking__infosection__title {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    font-size: x-large;
+}
+
+select {
+    font-family: 'Nanum myeongjo';
+    background-color: transparent;
+    color: white;
+    border: none;
+
+}
+select option {
+    background-color: #20666f;
+}
