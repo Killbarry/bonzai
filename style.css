@@ -8,13 +8,25 @@ body {
 
 /* MENU */
 
-.menu {
+/* .menu {
     background-image: url(/assets/photos/09-day.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    height: 100vh;
+    min-width: 100%;
+}  */
 
-    
-}
+.menu__img {
+    background-image: url("/assets/photos/09-day.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
 
 .menu__linklist {
     list-style-type: none;
@@ -25,9 +37,22 @@ body {
     padding-top: 0.8rem;
 }
 
+input .sidebar-menu {
+    display: none;
+}
 
-  a:-webkit-any-link {
+ .menu a:-webkit-any-link {
     color: #000;
+    text-decoration: none;
+ }
+
+.menu__booking a:-webkit-any-link {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .menu__confirmation a:-webkit-any-link {
+    color: #fff;
     text-decoration: none;
  }
 
@@ -63,6 +88,7 @@ li:nth-child(1) {
 
 .header__content__logo{
     max-width: 15%;
+    margin-bottom: 10rem;
 }
 
 /* main section checkin box */
@@ -80,7 +106,7 @@ li:nth-child(1) {
 
 .main-section__checkin {
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.9;
     margin: -2rem 2rem 0rem 2rem;
     display: grid;
     padding: 2rem;
@@ -89,8 +115,8 @@ li:nth-child(1) {
     align-items: center;
     justify-items: center;
     grid-template-areas:
-    'checkintext checkintext adulttext childtext button'
-    'checkindate checkindate adultcount childcount button';
+    'checkintext checkouttext adulttext childtext button'
+    'checkindate checkoutdate adultcount childcount button';
 }
 
 
@@ -104,6 +130,14 @@ li:nth-child(1) {
     grid-area: checkindate;
 }
 
+.main-section__checkout-text {
+    grid-area: checkouttext;
+    opacity: 1;
+}
+
+.main-section__checkout-dates {
+    grid-area: checkoutdate;
+}
 
 
 .main-section__checkin-adult {
@@ -157,6 +191,7 @@ select:focus {
     font-weight: 700;
     padding: 1rem;
     cursor: pointer;
+    margin-top: 2rem;
 }
 
 
@@ -196,7 +231,7 @@ select:focus {
 }
 
 .main__card__first{
-    background-image: url(/assets/photos/07-night.jpg);
+    background-image: url(/assets/photos/05-night.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -248,6 +283,7 @@ select:focus {
 
 .footer__nav__img{
     max-width: 100%;
+    width: 50%;
     grid-area: image;
     margin: 1rem;
 }
@@ -299,13 +335,273 @@ select:focus {
     font-size: x-large;
 }
 
-select {
+.booking__select {
     font-family: 'Nanum myeongjo';
     background-color: transparent;
     color: white;
     border: none;
 
 }
-select option {
+.booking__select option {
     background-color: #20666f;
 }
+
+.booking__roomcard {
+    border-width: 2rem;
+    border-style:solid;
+    border-color: #20666f;
+}
+
+.booking__roomcard__title {
+    text-align: center;
+  
+}
+
+.booking__roomcard__notitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.booking__roomcard__roomdetail {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'picture picture'
+    'picture picture'
+    'view size'
+    'occupancy bedding';
+    max-width: 30%;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    margin-bottom: 3rem;
+    
+}
+
+.roomcard__img {
+    grid-area: picture;
+    max-width: 100%;
+}
+
+.roomcard__view {
+    grid-area: view;
+}
+
+.roomcard__size{
+    grid-area: size;
+}
+
+.roomcard__occupancy {
+    grid-area: occupancy;
+}
+
+
+.booking__roomcard__prize {
+    text-align: center;
+}
+
+.booking__roomcard__prize-rate {
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+}
+
+
+.confirmation__body {
+    background-color: #05272f;
+    background-image: url(/assets/backgroundoverlay.png);
+    background-size: 90%;
+}
+.menu__confirmation {
+    padding: 0.5rem 0 0.5rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.confirmation__details {
+    background-color: #20666f;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'head head'
+    'bone sone'
+    'btwo stwo'
+    'bthree sthree'
+    'bfour sfour'
+    'bfive sfive';
+    padding: 2rem;
+    margin: 3rem;
+}
+
+.confirmation__details-header {
+    grid-area: head;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.confirmation__details-bold-one {
+    grid-area: bone;
+    font-weight: bolder;
+}
+
+.confirmation__details-bold-two {
+    grid-area: btwo;
+    font-weight: bolder;
+}
+
+.confirmation__details-bold-three {
+    grid-area: bthree;
+    font-weight: bolder;
+}
+.confirmation__details-bold-four {
+    grid-area: bfour;
+    font-weight: bolder;
+}
+.confirmation__details-bold-five {
+    grid-area: bfive;
+    font-weight: bolder;
+}
+
+
+.confirmation__details-slim-one {
+    grid-area: sone;
+}
+.confirmation__details-slim-two {
+    grid-area: stwo;
+}
+.confirmation__details-slim-three {
+    grid-area: sthree;
+}
+.confirmation__details-slim-four {
+    grid-area: sfour;
+}
+.confirmation__details-slim-five {
+    grid-area: sfive;
+}
+
+
+.booking__mainarea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'form imgone'
+    'form imgtwo';
+    margin: 3rem;
+}
+
+.booking__mainarea__img-one {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    grid-area: imgone;
+    margin: 0 0 2rem 3rem;
+}
+.booking__mainarea__img-two {
+    max-width: 100%;
+    width: 90%;
+    grid-area: imgtwo;
+    margin: 2rem;
+}
+
+.booking__mainarea__form {
+    display: flex;
+    flex-direction: column;
+    /* margin: rem; */
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem 2rem 1rem 2rem;
+    grid-area: form;
+}
+
+.select__confirm {
+    font-family: 'Nanum myeongjo';
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+
+}
+
+
+.about__filler {
+    text-align: center;
+    padding: 3rem;
+}
+
+.about__filler--header {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .main-section__checkin {
+        grid-template-areas:
+        'checkintext'
+        'checkindate'
+        'checkouttext'
+        'checkoutdate'
+        'adulttext'
+        'adultcount'
+        'childtext' 
+        'childcount'
+        'button';
+    }
+
+    .main__card {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main__card__first, .main__card__second, .main__card__third {
+        max-width: 70%;
+    }
+
+    .footer__nav{
+        grid-template-areas:
+        'image'
+        'info'
+        'ToC'
+        'resorts';
+        column-gap: 2rem;
+       }
+
+       nav .menu__linklist {
+            display: none; }
+
+           .header__content__text {
+            text-align: center;
+            margin: 1rem 0 5rem 2rem;
+           }
+        .header__content__logo {display: none;}
+
+      .booking__roomcard__notitle {
+        flex-direction: column;
+          }
+
+        
+        .booking__roomcard__roomdetail {
+            max-width: 100%;
+            border: none;
+        }
+
+        .booking__roomcard__prize-rate {
+            border: none;
+  
+        }
+
+        .header__content__logo {
+            display: none;
+        }
+
+        }
+
+  

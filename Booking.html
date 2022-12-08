@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bonz'ai Booking</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway">
 </head>
@@ -26,17 +26,121 @@
             <h3 class="booking__infosection__title">Select room</h3>
             <div></div>
             <div></div>
-            <select name="Filter" required>
+            <select name="Filter" required class="booking__select">
                 <option value="" disabled selected>Filter by</option>
                 <option value="Prize">Prize</option>
                 <option value="Size">Size</option>
             </select>
-            <select name="sort" required>
+            <select name="sort" required class="booking__select">
                 <option value="" disabled selected>Sort by</option>
                 <option value="Prize">Prize</option>
                 <option value="Size">Size</option>
             </select>
         </section>
+        <section class="booking__roomcard">
+            <h2 class="booking__roomcard__title">Bonz'ai Double Queen Room</h2>
+            <div class="booking__roomcard__notitle">
+                <section class="booking__roomcard__roomdetail">
+                    <img src="/assets/photos/04-day.jpg" class="roomcard__img">
+                    <p class="roomcard__view"> View: <br>Mountain</p>
+                    <p class="roomcard__size">Size: <br>63sqm</p>
+                    <p class="roomcard__occupancy">Occupancy: <br>Sleeps 4</p>
+                    <p class="roomcard_bedding">Bedding:<br>2 Queen beds</p>
+                </section>
+                <section class="booking__roomcard__prize">
+                    <h3>Choose a package from below</h3>
+                    <div class="booking__roomcard__prize-rate">
+                    <h3>Best Avalibe rate</h3>
+                    <p>Average price per night</p>
+                    <p> EUR 110</p>
+                    <form method="get" action="/confirmation.html"><button type="submit" class="main-section__checkin-button">BOOK</button></form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="booking__roomcard">
+            <h2 class="booking__roomcard__title">Bonz'ai Double King Room</h2>
+            <div class="booking__roomcard__notitle">
+                <section class="booking__roomcard__roomdetail">
+                    <img src="/assets/photos/06-day.jpg" class="roomcard__img">
+                    <p class="roomcard__view"> View: <br>Mountain</p>
+                    <p class="roomcard__size">Size: <br>73sqm</p>
+                    <p class="roomcard__occupancy">Occupancy: <br>Sleeps 3</p>
+                    <p class="roomcard_bedding">Bedding:<br>1 King bed</p>
+                </section>
+                <section class="booking__roomcard__prize">
+                    <h3>Choose a package from below</h3>
+                    <div class="booking__roomcard__prize-rate">
+                    <h3>Best Avalibe rate</h3>
+                    <p>Average price per night</p>
+                    <p> EUR 135</p>
+                    <form method="get" action="/confirmation.html"><button type="submit" class="main-section__checkin-button">BOOK</button></form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="booking__roomcard">
+            <h2 class="booking__roomcard__title">Bonz'ai Superior King Room</h2>
+            <div class="booking__roomcard__notitle">
+                <section class="booking__roomcard__roomdetail">
+                    <img src="/assets/photos/08-day.jpg" class="roomcard__img">
+                    <p class="roomcard__view"> View: <br>Sea</p>
+                    <p class="roomcard__size">Size: <br>73sqm</p>
+                    <p class="roomcard__occupancy">Occupancy: <br>Sleeps 3</p>
+                    <p class="roomcard_bedding">Bedding:<br>1 King bed</p>
+                </section>
+                <section class="booking__roomcard__prize">
+                    <h3>Choose a package from below</h3>
+                    <div class="booking__roomcard__prize-rate">
+                    <h3>Best Avalibe rate</h3>
+                    <p>Average price per night</p>
+                    <p> EUR 155</p>
+                    <form method="get" action="/confirmation.html"><button type="submit" class="main-section__checkin-button">BOOK</button></form>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
     </header>
+
+    <footer class="footer">
+        <nav  class="footer__nav">
+            <img src="/assets/logo/bonz.ai-logo-color-landscape.png" class="footer__nav__img">
+            <section class="footer__nav-info">
+                <h4 class="footer__nav__header">Resort Information</h4> 
+                <ul class="footer__nav__list">
+                    <li>About Us</li>
+                    <li>Transfers</li>
+                    <li>Our Partners</li>
+                    <li>Gift Vouchers</li>
+                    <li>Sitemap</li>
+                    <li>Contact Us</li>
+                </ul>
+            </section>
+            <section class="footer__nav-ToC">
+                <h4 class="footer__nav__header">Terms & Conditions</h4> 
+                <ul class="footer__nav__list">
+                    <li>Privacy Policy</li>
+                    <li>Bookings & Cancellations</li>
+                    <li>Website Terms</li>
+                </ul>
+            </section>
+            <section class="footer__nav-resorts">
+                <h4 class="footer__nav__header">Bonz.ai's Resorts</h4> 
+                <ul class="footer__nav__list">
+                    <li>Bonzai</li>
+                    <li>Our Resorts</li>
+                    <li>Private Homes</li>
+                    <li>Media Centre</li>
+                    <li>Awards</li>
+                    <li>Newsletter Signup</li>
+                </ul>
+            </section>
+        </nav>
+
+    </footer>
 </body>
 </html>

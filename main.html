@@ -4,35 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bonz'ai Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway">
 </head>
 <body>
     <header>
         <nav class="menu">
+            <div class="menu__img">
             <ul class="menu__linklist">
                 <li><img src="/assets/logo/bonz.ai-logo-black-landscape.png" href="main.html" class="menu__header-logo"></li>
-                <li><a class="menu__link--home">Home</a></li>
+                <li><a class="menu__link--home" href="main.html">Home</a></li>
                 <li><a class="menu__link--About" href="about.html">About us</a></li>
                 <li><a class="menu__link--booking" href="Booking.html">Booking</a></li>
                 <li><a class="menu__link--contact">Contact</a></li>
                 <li><a class="menu__link--gallery">Gallery</a></li>
             </ul>
+    
             <div class="header__content">
                 <h1 class="header__content__text">A  different way to stay</h1>
                 <img src="/assets/logo/bonz.ai-logo-black-portrait.png" class="header__content__logo">
             </div>
+        </div>
         </nav>
     </header>
     <article class="main-section">
         <aside class="main-section__checkin">
             <h2 class="main-section__checkin-text">Check-in</h2>
-            <input type="date" id="checkin" name="checkin" class="main-section__checkin-dates">
+            <input type="date" id="checkin" name="checkin" class="main-section__checkin-dates" required>
+            <h2 class="main-section__checkout-text">Check-out</h2>
+            <input type="date" id="checkout" name="checkout" class="main-section__checkout-dates" required>
             <p class="main-section__checkin-adult">Adults</p>
-            <input type="number" id="quantityadult" min="1" class="main-section__checkin-adult-input">
+            <input type="number" id="quantityadult" min="1" class="main-section__checkin-adult-input" value="2" required>
             <p class="main-section__checkin-children">Children</p>
-            <input type="number" id="quantitychildren" min="0" class="main-section__checkin-childreninput">
+            <input type="number" id="quantitychildren" min="0" class="main-section__checkin-childreninput" value="0" required>
             <form method="get" action="/Booking.html"><button type="submit" class="main-section__checkin-button">Check avalibility</button></form>
         </aside>
 

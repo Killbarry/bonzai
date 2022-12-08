@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bonz'ai Confirmation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway">
+    </head>
+<body class="confirmation__body">
+    <header class="confirmation__header">
+        <nav class="menu__confirmation">
+        <ul class="menu__linklist">
+            <li><img src="/assets/logo/bonz.ai-logo-color-landscape.png" href="main.html" class="menu__header-logo"></li>
+            <li><a class="menu__link--home" href="main.html">Home</a></li>
+            <li><a class="menu__link--About" href="about.html">About us</a></li>
+            <li><a class="menu__link--booking" href="Booking.html">Booking</a></li>
+            <li><a class="menu__link--contact">Contact</a></li>
+            <li><a class="menu__link--gallery">Gallery</a></li>
+        </ul>
+        </nav>
+
+        <article class="confirmation__details">
+            <h3 class="confirmation__details-header">Your Details</h3>
+            <p class="confirmation__details-bold-one">Date</p>
+            <p class="confirmation__details-slim-one">xx/xx-xx</p>
+            <p class="confirmation__details-bold-two">Number of nights</p>
+            <p class="confirmation__details-slim-two">xx nights</p>
+            <p class="confirmation__details-bold-three">Guests</p>
+            <p class="confirmation__details-slim-three">x adults</p>
+            <p class="confirmation__details-bold-four">Room</p>
+            <p class="confirmation__details-slim-four">xx room</p>
+            <P class="confirmation__details-bold-five">Total Price</P>
+            <p class="confirmation__details-slim-five">xx EUR</p>
+        </article>
+    </header>
+
+    <article>
+        <section class="booking__mainarea">
+            <form class="booking__mainarea__form">
+                <label for="title">Title*</label>
+                <select name="title" required class="select__confirm" id="title">
+                    <option value="" disabled selected></option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                </select><br>
+                <label for="firstname">First name*</label>
+                <input type="text" id="firstname" required><br>
+                <label for="lastname">Last name*</label>
+                <input type="text" id="lastname" required><br>
+                <label for="email">Email*</label>
+                <input type="text" id="Email" required><br>
+                <label for="emailconf">Confirm Email*</label>
+                <input type="text" id="emailconf" required><br>
+                <label for="telnum">Telephone number*</label>
+                <input type="number" id="telnum" required><br>
+                <label for="country">Country*</label>
+                <input type="text" id="country" required> <br>
+                <label for="state">State</label>
+                <input type="text" id="state"> <br>
+                <label for="city">City*</label>
+                <input type="text" id="city" required><br>
+                <label for="adress1">Adress 1*</label>
+                <input type="text" id="Adress1" required><br>
+                <label for="adress2">Adress 2</label>
+                <input type="text" id="adress2"><br>
+                <label for="postcode">Post code*</label>
+                <input type="text" id="postcode" required><br>
+                <form method="get" action=" "><button type="submit" class="main-section__checkin-button">Go to payment</button></form>
+            </form>
+            <img src="/assets/photos/03-night.jpg" class="booking__mainarea__img-one">
+            <img src="/assets/photos/07-night.jpg" class="booking__mainarea__img-two">
+        </section>
+    </article>
+
+    <footer class="footer">
+        <nav  class="footer__nav">
+            <img src="/assets/logo/bonz.ai-logo-color-landscape.png" class="footer__nav__img">
+            <section class="footer__nav-info">
+                <h4 class="footer__nav__header">Resort Information</h4> 
+                <ul class="footer__nav__list">
+                    <li>About Us</li>
+                    <li>Transfers</li>
+                    <li>Our Partners</li>
+                    <li>Gift Vouchers</li>
+                    <li>Sitemap</li>
+                    <li>Contact Us</li>
+                </ul>
+            </section>
+            <section class="footer__nav-ToC">
+                <h4 class="footer__nav__header">Terms & Conditions</h4> 
+                <ul class="footer__nav__list">
+                    <li>Privacy Policy</li>
+                    <li>Bookings & Cancellations</li>
+                    <li>Website Terms</li>
+                </ul>
+            </section>
+            <section class="footer__nav-resorts">
+                <h4 class="footer__nav__header">Bonz.ai's Resorts</h4> 
+                <ul class="footer__nav__list">
+                    <li>Bonzai</li>
+                    <li>Our Resorts</li>
+                    <li>Private Homes</li>
+                    <li>Media Centre</li>
+                    <li>Awards</li>
+                    <li>Newsletter Signup</li>
+                </ul>
+            </section>
+        </nav>
+
+    </footer>
+</body>
+</html>
