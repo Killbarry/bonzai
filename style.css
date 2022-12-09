@@ -52,10 +52,6 @@ body {
     text-decoration: none;
  }
 
- .menu__confirmation a:-webkit-any-link {
-    color: #fff;
-    text-decoration: none;
- }
 
 li:nth-child(1) {
    max-width: 20%;
@@ -161,6 +157,7 @@ li:nth-child(1) {
     grid-area: childcount;
 
 }
+
 
 
 
@@ -416,11 +413,6 @@ select:focus {
     background-image: url(/assets/backgroundoverlay.png);
     background-size: 90%;
 }
-.menu__confirmation {
-    padding: 0.5rem 0 0.5rem 0;
-    color: #fff;
-    text-align: center;
-}
 
 
 .confirmation__details {
@@ -499,17 +491,18 @@ select:focus {
 }
 
 .booking__mainarea__img-one {
-    max-width: 100%;
-    width: 90%;
+    max-width: 90%;
+    width: auto;
     height: auto;
     grid-area: imgone;
-    margin: 0 0 2rem 3rem;
+    margin: 0 3rem 2rem 3rem;
+
 }
 .booking__mainarea__img-two {
-    max-width: 100%;
-    width: 90%;
+    max-width: 90%;
+    width: auto;
     grid-area: imgtwo;
-    margin: 2rem;
+    margin: 0 3rem 2rem 3rem;
 }
 
 .booking__mainarea__form {
@@ -543,6 +536,8 @@ select:focus {
 
 .nav a{
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 .nav ul{
     list-style: none;
@@ -577,8 +572,7 @@ select:focus {
     display: block;
     padding: 30px;
 }
-.menu a:hover{
-}
+
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
@@ -605,7 +599,6 @@ select:focus {
     display: block;
     height: 100%;
     position: absolute;
-    transition: all .2s ease-out;
     width: 100%;
 }
 .hamb-line::before{
@@ -623,17 +616,6 @@ select:focus {
 
 .side-menu:checked ~ nav{
     max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
 }
 
 .nav a:-webkit-any-link {
@@ -712,7 +694,24 @@ select:focus {
         .header__content__logo {
             display: none;
         }
-
+       .booking__mainarea{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            'imgone'
+            'form'
+            'imgtwo';
         }
 
+        .booking__mainarea__img-one{
+            margin: 0 0 1rem 0;
+            max-width: 100%;
+        }
+
+        .booking__mainarea__img-two{
+            margin: 2rem 0 1rem 0;
+            max-width: 100%;
+        }
   
+        }
+
+ 
